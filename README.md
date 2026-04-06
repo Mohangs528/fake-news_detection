@@ -111,7 +111,7 @@ FAKE
 
 ▶️ How to Run the Project
 1. Clone or Download the Project
-git clone https://github.com/your-username/fake-news-detection.git
+git clone https://github.com/Mohangs528/fake-news_detection
 cd fake-news-detection
 2. Install Required Libraries
 pip install -r requirements.txt
