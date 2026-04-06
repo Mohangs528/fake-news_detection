@@ -46,7 +46,7 @@ Input News → Text Cleaning → TF-IDF → ML Model → Prediction
 ---
 
 ## 📂 Project Structure
-```text
+
 fake-news-detection/
 │
 ├── app.py
