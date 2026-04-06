@@ -62,7 +62,9 @@ fake-news-detection/
 │
 └── static/
     └── style.css
+
 ---
+
 📊 Dataset
 
 The project uses a custom dataset containing:
@@ -74,7 +76,9 @@ Example:
 | ---------------------------------------- | ----- |
 | Government launches new education policy | REAL  |
 | Aliens landed in India yesterday         | FAKE  |
+
 ---
+
 🧠 Machine Learning Model
 
 The model used in this project is:
@@ -84,20 +88,26 @@ Why this model?
 Suitable for text classification
 Fast and efficient
 Works well for fake news detection
+
 ---
+
 🔤 NLP Techniques Used
 Lowercasing text
 Removing punctuation
 Removing unnecessary symbols
 Text cleaning
+
 ---
+
 📥 Input and Output
 Input
 News article / headline / news content entered by user
 Output
 REAL
 FAKE
+
 ---
+
 ▶️ How to Run the Project
 1. Clone or Download the Project
 git clone https://github.com/your-username/fake-news-detection.git
@@ -110,7 +120,9 @@ python train_model.py
 python app.py
 5. Open in Browser
 http://127.0.0.1:5000
+
 ---
+
 📌 Example Prediction
 Input:
 
@@ -119,26 +131,34 @@ Aliens found near Indian railway station
 Output:
 
 FAKE
+
 ---
+
 ⚠️ Limitations
 Accuracy depends on dataset quality
 Small dataset may reduce performance
 This project does not use real-time news APIs
 It is based only on the trained dataset
+
 ---
+
 🔮 Future Enhancements
 Use a larger dataset
 Improve prediction accuracy
 Add multilingual support
 Use advanced models like BERT / LSTM
 Improve UI design
+
 ---
+
 🎯 Conclusion
 
 This project demonstrates how NLP and Machine Learning can be used to classify news articles as REAL or FAKE.
 
 It is a simple and useful project for learning text classification and fake news detection.
+
 ---
+
 👨‍💻 Author / Team
 
 Project Title: Fake News Detection Using NLP and Machine Learning
@@ -153,4 +173,6 @@ Geethanjali K
 Guide Name:
 
 Hanumanth Gowda
+
 ---
+
