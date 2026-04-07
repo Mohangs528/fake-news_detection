@@ -11,7 +11,7 @@ with open("model.pkl", "rb") as f:
 with open("vectorizer.pkl", "rb") as f:
     vectorizer = pickle.load(f)
 
-# Clean text function
+# Text cleaning
 def clean_text(text):
     text = str(text).lower()
     text = re.sub(r'[^a-zA-Z\s]', '', text)
@@ -30,7 +30,19 @@ def predict():
 
     prediction = model.predict(vector)[0]
 
-    return render_template("index.html", prediction_text=f"Prediction: {prediction}")
+    if prediction == "REAL":
+        result_class = "real"
+        emoji = "✅"
+    else:
+        result_class = "fake"
+        emoji = "⚠️"
+
+    return render_template(
+        "index.html",
+        prediction_text=f"{emoji} Prediction: {prediction}",
+        result_class=result_class,
+        input_news=news
+    )
 
 if __name__ == "__main__":
     app.run(debug=True)
