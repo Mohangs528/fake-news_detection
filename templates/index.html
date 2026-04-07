@@ -11,7 +11,7 @@
         }
         .container {
             background: white;
-            width: 60%;
+            width: 65%;
             margin: auto;
             padding: 30px;
             border-radius: 15px;
@@ -19,7 +19,7 @@
         }
         textarea {
             width: 90%;
-            height: 150px;
+            height: 160px;
             padding: 15px;
             font-size: 16px;
             border-radius: 10px;
@@ -45,7 +45,16 @@
             margin-top: 25px;
             font-size: 24px;
             font-weight: bold;
-            color: #16a34a;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .real {
+            color: #166534;
+            background: #dcfce7;
+        }
+        .fake {
+            color: #991b1b;
+            background: #fee2e2;
         }
     </style>
 </head>
@@ -53,12 +62,14 @@
     <div class="container">
         <h1>Fake News Detection</h1>
         <form action="/predict" method="post">
-            <textarea name="news" placeholder="Enter news text here..." required></textarea><br>
+            <textarea name="news" placeholder="Enter news text here..." required>{{ input_news if input_news else '' }}</textarea><br>
             <button type="submit">Check News</button>
         </form>
 
         {% if prediction_text %}
-            <div class="result">{{ prediction_text }}</div>
+            <div class="result {{ result_class }}">
+                {{ prediction_text }}
+            </div>
         {% endif %}
     </div>
 </body>
